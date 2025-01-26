@@ -11,7 +11,7 @@ const PortfolioTemplate3 = () => {
       <header className="w-full bg-white shadow-md">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-purple-500">
-            {formData.name || "Alexa"}
+            {formData?.name || "Alexa"}
           </h1>
           <nav>
             <ul className="flex space-x-6">
@@ -38,11 +38,11 @@ const PortfolioTemplate3 = () => {
           <h2 className="text-4xl font-bold mb-4">
             Hi, I&apos;m{" "}
             <span className="text-purple-500">
-              {formData.name || "Alexa"}
+              {formData?.name || "Alexa"}
             </span>
           </h2>
           <p className="text-lg text-gray-600 mb-6">
-            {formData.about ||
+            {formData?.about ||
               "High level experience in web design and development knowledge, producing quality work."}
           </p>
           <a
@@ -68,7 +68,7 @@ const PortfolioTemplate3 = () => {
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-6 text-purple-500">About Me</h2>
           <p className="text-lg text-gray-600">
-            {formData.educationExperience ||
+            {formData?.educationExperience ||
               "Write about your education, experience, and background here."}
           </p>
         </div>
@@ -81,8 +81,8 @@ const PortfolioTemplate3 = () => {
             My Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {formData.projects
-              ? formData.projects.split(",").map((project, index) => (
+            {formData?.projects
+              ? formData?.projects.split(",").map((project, index) => (
                   <div
                     key={index}
                     className="bg-white rounded-lg shadow-lg p-6"
@@ -105,7 +105,7 @@ const PortfolioTemplate3 = () => {
             Contact Me
           </h2>
           <p className="text-lg text-gray-600">
-            <strong>Email:</strong> {formData.contact || "your.email@example.com"}
+            <strong>Email:</strong> {formData?.contact || "your.email@example.com"}
           </p>
         </div>
       </section>
@@ -114,7 +114,7 @@ const PortfolioTemplate3 = () => {
       <footer className="w-full bg-white text-center py-4 shadow-md">
         <p className="text-sm text-gray-600">
           © {new Date().getFullYear()}{" "}
-          {formData.name || "Alexa"}. All rights reserved.
+          {formData?.name || "Alexa"}. All rights reserved.
         </p>
       </footer>
     </div>

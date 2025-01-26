@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import FormPage from "./components/FormPage";
-import PortfolioTemplate2 from "./components/PortfolioTemplate2";
+import PortfolioTemplate2 from "./components/portfolioTemplate2/PortfolioTemplate2";
 import PortfolioTemplate3 from "./components/PortfolioTemplate3";
-import PortfolioTemplate1 from "./components/PortfolioTemplate1";
+import PortfolioTemplate1 from "./components/portfolioTemplate1/PortfolioTemplate1";
 
 const App = () => {
   return (
